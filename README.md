@@ -1,4 +1,4 @@
 mpd-2013-41n
 ============
 
-Repositório de MPD da turma i41d de 2013
+Repositório de MPD das turmas i41n e i61n de 2013
