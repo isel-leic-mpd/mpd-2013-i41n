@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" size="1059,576" id="app" metadata="uml2-1.0" initialized="true" scrolledY="54" tag="1000" key="32303037303533312D313030302061756C6131322F6D63617276616C686F">
+  <children xsi:type="editmodel:ClassEditModel" name="FieldValidatorSetter" location="481,437" size="163,119" id="app/FieldValidatorSetter" runTimeClassModel="f,valid,update(Ljava.lang.Object;Ljava.lang.Object;),FieldValidatorSetter">
+    <children xsi:type="editmodel:CompartmentEditModel" size="118,34">
+      <children xsi:type="editmodel:AttributeEditModel" name="f" id="app/FieldValidatorSetter#f"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="valid" id="app/FieldValidatorSetter#valid"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="127,34">
+      <children xsi:type="editmodel:MethodEditModel" name="FieldValidatorSetter" id="app/FieldValidatorSetter#FieldValidatorSetter"/>
+      <children xsi:type="editmodel:MethodEditModel" name="update" id="app/FieldValidatorSetter#update(Ljava.lang.Object;Ljava.lang.Object;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="app/Setter&lt;-app/FieldValidatorSetter" source="//@children.0" target="//@children.3/@sourceConnections.0" targetEnd="//@children.0/@sourceConnections.0/@children.1" sourceEnd="//@children.0/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="81,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="FieldSetter" location="668,437" size="103,102" id="app/FieldSetter" runTimeClassModel="f,update(Ljava.lang.Object;Ljava.lang.Object;),FieldSetter(Ljava.lang.reflect.Field;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="43,17">
+      <children xsi:type="editmodel:AttributeEditModel" name="f" id="app/FieldSetter#f"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="80,34">
+      <children xsi:type="editmodel:MethodEditModel" name="FieldSetter" id="app/FieldSetter#FieldSetter(Ljava.lang.reflect.Field;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="update" id="app/FieldSetter#update(Ljava.lang.Object;Ljava.lang.Object;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="app/Setter&lt;-app/FieldSetter" source="//@children.1" target="//@children.3/@sourceConnections.0" targetEnd="//@children.1/@sourceConnections.0/@children.1" sourceEnd="//@children.1/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="50,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.3/@sourceConnections.0" name="Setter" location="363,303" size="84,83" id="app/Setter" runTimeClassModel="update(Ljava.lang.Object;Ljava.lang.Object;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="59,17">
+      <children xsi:type="editmodel:MethodEditModel" name="update" id="app/Setter#update(Ljava.lang.Object;Ljava.lang.Object;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="PropertySetter" location="50,437" size="128,102" id="app/PropertySetter" runTimeClassModel="update(Ljava.lang.Object;Ljava.lang.Object;),prop,PropertySetter(Ljava.lang.reflect.Method;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="78,17">
+      <children xsi:type="editmodel:AttributeEditModel" name="prop" id="app/PropertySetter#prop"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="98,34">
+      <children xsi:type="editmodel:MethodEditModel" name="PropertySetter" id="app/PropertySetter#PropertySetter(Ljava.lang.reflect.Method;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="update" id="app/PropertySetter#update(Ljava.lang.Object;Ljava.lang.Object;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" targetConnections="//@children.0/@sourceConnections.0 //@children.1/@sourceConnections.0 //@children.4/@sourceConnections.0" autoLocated="true" id="app/Setter&lt;-app/PropertySetter" source="//@children.3" target="//@children.2" targetEnd="//@children.3/@sourceConnections.0/@children.1" sourceEnd="//@children.3/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="63,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="41,82" anchorKind="FixedAtEdge"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="PropertyValidatorSetter" location="240,437" size="189,119" id="app/PropertyValidatorSetter" runTimeClassModel="valid,update(Ljava.lang.Object;Ljava.lang.Object;),prop,PropertyValidatorSetter">
+    <children xsi:type="editmodel:CompartmentEditModel" size="118,34">
+      <children xsi:type="editmodel:AttributeEditModel" name="prop" id="app/PropertyValidatorSetter#prop"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="valid" id="app/PropertyValidatorSetter#valid"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="145,34">
+      <children xsi:type="editmodel:MethodEditModel" name="PropertyValidatorSetter" id="app/PropertyValidatorSetter#PropertyValidatorSetter"/>
+      <children xsi:type="editmodel:MethodEditModel" name="update" id="app/PropertyValidatorSetter#update(Ljava.lang.Object;Ljava.lang.Object;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="app/Setter&lt;-app/PropertyValidatorSetter" source="//@children.4" target="//@children.3/@sourceConnections.0" targetEnd="//@children.4/@sourceConnections.0/@children.1" sourceEnd="//@children.4/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="94,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="FieldSetterWithValidationFinder" location="50,184" size="247,68" id="app/FieldSetterWithValidationFinder" runTimeClassModel="get(Ljava.lang.Iterable;Ljava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="38,17">
+      <children xsi:type="editmodel:MethodEditModel" name="get" id="app/FieldSetterWithValidationFinder#get(Ljava.lang.Iterable;Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" targetConnections="//@children.7/@sourceConnections.0 //@children.8/@sourceConnections.0 //@children.6/@sourceConnections.0" autoLocated="true" id="app/SetterFinder&lt;-app/FieldSetterWithValidationFinder" source="//@children.5" target="//@children.9" targetEnd="//@children.5/@sourceConnections.0/@children.1" sourceEnd="//@children.5/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="123,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="56,82" anchorKind="FixedAtEdge"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="PropertySetterFinder" location="865,184" size="174,68" id="app/PropertySetterFinder" runTimeClassModel="get(Ljava.lang.Iterable;Ljava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="38,17">
+      <children xsi:type="editmodel:MethodEditModel" name="get" id="app/PropertySetterFinder#get(Ljava.lang.Iterable;Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="app/SetterFinder&lt;-app/PropertySetterFinder" source="//@children.6" target="//@children.5/@sourceConnections.0" targetEnd="//@children.6/@sourceConnections.0/@children.1" sourceEnd="//@children.6/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="86,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="PropertySetterWithValidationFinder" location="346,184" size="273,68" id="app/PropertySetterWithValidationFinder" runTimeClassModel="get(Ljava.lang.Iterable;Ljava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="38,17">
+      <children xsi:type="editmodel:MethodEditModel" name="get" id="app/PropertySetterWithValidationFinder#get(Ljava.lang.Iterable;Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="app/SetterFinder&lt;-app/PropertySetterWithValidationFinder" source="//@children.7" target="//@children.5/@sourceConnections.0" targetEnd="//@children.7/@sourceConnections.0/@children.1" sourceEnd="//@children.7/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="136,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="FieldSetterFinder" location="668,184" size="148,68" id="app/FieldSetterFinder" runTimeClassModel="get(Ljava.lang.Iterable;Ljava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="38,17">
+      <children xsi:type="editmodel:MethodEditModel" name="get" id="app/FieldSetterFinder#get(Ljava.lang.Iterable;Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="app/SetterFinder&lt;-app/FieldSetterFinder" source="//@children.8" target="//@children.5/@sourceConnections.0" targetEnd="//@children.8/@sourceConnections.0/@children.1" sourceEnd="//@children.8/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="73,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.5/@sourceConnections.0" name="SetterFinder" location="531,50" size="113,83" id="app/SetterFinder" runTimeClassModel="get(Ljava.lang.Iterable;Ljava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="38,17">
+      <children xsi:type="editmodel:MethodEditModel" name="get" id="app/SetterFinder#get(Ljava.lang.Iterable;Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" interactive="false" level="-1" showScope="InPackage" properties="wireOptions=1;Product=eUML2"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>
