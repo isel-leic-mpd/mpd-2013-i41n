@@ -3,6 +3,7 @@ package tohtml;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
+import java.lang.reflect.Modifier;
 
 import tohtml.elements.HtmlComposedElement;
 import tohtml.elements.HtmlTextElement;
@@ -35,6 +36,7 @@ public class HtmlParser {
 		body.addElement(new HtmlTextElement("h1", srcClass.getSimpleName()));
 		root.addElement(body);
 		for (Field field : fs) {
+			if((field.getModifiers() & Modifier.STATIC) != 0) continue;
 			field.setAccessible(true);
 			final Object val = field.get(src);
 			assert val.getClass() == field.getType();
