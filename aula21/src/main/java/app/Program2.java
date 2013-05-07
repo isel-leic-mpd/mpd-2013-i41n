@@ -13,6 +13,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
+import javax.swing.border.Border;
 
 
 public class Program2 {
@@ -24,6 +25,7 @@ public class Program2 {
 		frm.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		
 		JLabel lb = new JLabel("Ola:");
+		Border b = BorderFactory.createBevelBorder(1); 
 		lb.setBorder(BorderFactory.createBevelBorder(1)); // STRATEGY !!!! Mas nao segue o PD Abstract Factory 
 		frm.add(lb);
 		final JTextArea txtArea = new JTextArea();
