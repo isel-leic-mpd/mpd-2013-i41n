@@ -1,3 +1,4 @@
+package app;
 import static java.lang.System.in;
 import static java.lang.System.out;
 
@@ -6,20 +7,21 @@ import java.util.Scanner;
 
 import javax.sql.DataSource;
 
+import model.Product;
+
+import orm.JdbcCmd;
+import orm.JdbcExecutor;
+import orm.northwind.CmdGetProductById;
+
 import com.microsoft.sqlserver.jdbc.SQLServerDataSource;
 
-public class App {
+public class Program {
 	public static void main(String[] args) throws SQLException {
-		ProductDataAccessor data = new ProductDataAccessor();
 		SQLServerDataSource ds = new SQLServerDataSource();
 		ds.setUser("myAppUser");
 		ds.setPassword("fcp");
-		
-		/*
-		Iterable<Product> prods = data.getProducts(ds);
-		for (Product product : prods) {
-	    System.out.println(product);
-	    */
+		JdbcExecutor exec = new JdbcExecutor(ds);
+		JdbcCmd<Product> c = new CmdGetProductById();
 		
 		//
 		// run command shell
@@ -31,7 +33,7 @@ public class App {
 			out.flush();
 			String inLine = cin.nextLine();
 			int id = Integer.parseInt(inLine);
-			out.println(data.getProductById(ds, id));
+			out.println(exec.executeQuery(c, id));
 		}
 
     }

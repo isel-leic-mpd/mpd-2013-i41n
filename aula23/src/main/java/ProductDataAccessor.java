@@ -12,7 +12,7 @@ public class ProductDataAccessor{
 	public Iterable<Product> getProductById(DataSource ds, int id) throws SQLException{
 		LinkedList<Product> res = null;
 		final String SQL = "SELECT ProductID, ProductName, UnitPrice, UnitsInStock FROM Products WHERE ProductId = ?";
-		try (Connection con = ds.getConnection("myAppUser", "fcp"); // Establish the connection.
+		try (Connection con = ds.getConnection(); // Establish the connection.
 			 PreparedStatement stmt = con.prepareStatement(SQL)	
 		) {
 			stmt.setInt(1, id);
@@ -51,3 +51,9 @@ public class ProductDataAccessor{
 		}		
 	}
 }
+
+
+
+
+
+
