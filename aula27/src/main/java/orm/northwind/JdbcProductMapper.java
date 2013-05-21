@@ -8,7 +8,7 @@ import model.Product;
 import orm.JdbcAbstractMapper;
 import orm.JdbcBinder;
 import orm.JdbcCmd;
-import orm.JdbcCmdQuery;
+import orm.JdbcCmdTemplate;
 import orm.JdbcConverter;
 import orm.JdbcExecutor;
 
@@ -39,9 +39,9 @@ public class JdbcProductMapper extends JdbcAbstractMapper<Integer, Product>{
 		}
 	};
 	
-	final static JdbcCmd<Product> getById = new JdbcCmdQuery<>(sqlQuery + " WHERE ProductId = ?", converter, JdbcBinder.BindInt);
-	final static JdbcCmd<Product> getAll = new JdbcCmdQuery<>(sqlQuery, converter);
-	final static JdbcCmd<Product> updateCmd = new JdbcCmdQuery<>(sqlUpdate, null, binder);
+	final static JdbcCmd<Product> getById = new JdbcCmdTemplate<>(sqlQuery + " WHERE ProductId = ?", converter, JdbcBinder.BindInt);
+	final static JdbcCmd<Product> getAll = new JdbcCmdTemplate<>(sqlQuery, converter);
+	final static JdbcCmd<Product> updateCmd = new JdbcCmdTemplate<>(sqlUpdate, null, binder);
 	
 	/*=================================================================
 	 *=================================================================*/

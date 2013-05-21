@@ -6,6 +6,12 @@ public interface DataMapper<K, T>{
 	
 	Iterable<T> getAll();
 	
+	Iterable<T> where(String clause, JdbcBinder<?> binder, Object arg);
+	
 	void update(T value);
-
+	
+	void insert(T value);
+	
+	void delete(T value);
+	
 }

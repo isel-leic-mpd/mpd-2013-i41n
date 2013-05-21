@@ -13,7 +13,10 @@ import orm.JdbcExecutor;
 import orm.JdbcExecutorMultipleConnection;
 
 public class JdbcEmployeesMapper extends JdbcAbstractMapper<Integer, Employee>{
-	final static String sql = "SELECT EmployeeId, Title, FirstName, LastName, BirthDate FROM Employees";
+	final static String sqlGetAll = "SELECT EmployeeId, Title, FirstName, LastName, BirthDate FROM Employees";
+	final static String sqlUpdate = "UPDATE Employees SET Title = ?, FirstName = ?, LastName = ?, BirthDate = ? WHERE EmployeeId = ?";
+	final static String sqlInsert = "INSERT INTO Employees (Title, FirstName, LastName, BirthDate ) VALUES (?, ?, ?, ?)"; 
+	final static String sqlDelete = "DELETE FROM Employees WHERE EmployeeId = ?";
 	
 	final static JdbcConverter<Employee> conv = new JdbcConverter<Employee>(){
 		@Override
@@ -27,14 +30,13 @@ public class JdbcEmployeesMapper extends JdbcAbstractMapper<Integer, Employee>{
 		}		
 	};
 	final static JdbcCmd<Employee> cmdLoadAll = new JdbcCmdTemplate<Employee>(
-			sql, 
+			sqlGetAll, 
 			conv);
 	
 	final static JdbcCmd<Employee> cmdLoadById = new JdbcCmdTemplate<Employee>(
-			sql + " WHERE EmployeeId = ?", 
+			sqlGetAll + " WHERE EmployeeId = ?", 
 			conv,
 			JdbcBinder.BindInt);	
-
 
 	public JdbcEmployeesMapper(JdbcExecutor exec) {
 		super(exec);
@@ -52,6 +54,24 @@ public class JdbcEmployeesMapper extends JdbcAbstractMapper<Integer, Employee>{
 
 	@Override
 	protected JdbcCmd<Employee> cmdUpdate() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	protected void updateKeyOnValue(Employee value, Integer key) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	@Override
+	protected JdbcCmd<Integer> cmdInsert() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	protected JdbcCmd<Employee> cmdDelete() {
 		// TODO Auto-generated method stub
 		return null;
 	}

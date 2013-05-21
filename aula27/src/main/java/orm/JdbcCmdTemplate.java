@@ -4,13 +4,13 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class JdbcCmdQuery<T> implements JdbcCmd<T>{
+public class JdbcCmdTemplate<T> implements JdbcCmd<T>{
 
 	final String sql;
 	final JdbcBinder [] binders;
 	final JdbcConverter<T> converter;
 	
-	public JdbcCmdQuery(String sql, JdbcConverter<T> converter, JdbcBinder<?>...binder) {
+	public JdbcCmdTemplate(String sql, JdbcConverter<T> converter, JdbcBinder<?>...binder) {
 		this.sql = sql;
 		this.binders = binder;
 		this.converter = converter;
